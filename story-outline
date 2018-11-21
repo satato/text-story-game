@@ -13,6 +13,14 @@ Classes:
 -Mage
 -Warrior
 -Archer
+
+Player Stat Types:
+-Health Points (userHP)(integer)
+-Experience (userExp)(integer)
+-Spellcaster? (spellCastingAbility)(boolean)
+-Spells Available (spellsAvailable)(array/list)
+-Default Damage (attackPoints)(integer)
+-Default Defense (defenseScore)(integer)
 -------------------------------------
 Lore:
 -----
