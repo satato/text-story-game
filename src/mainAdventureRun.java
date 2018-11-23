@@ -68,35 +68,11 @@ public class mainAdventureRun
 		}
 		
 		System.out.println("Let me tell you the story of our village...");
-		System.out.println("*press any key and then enter to continue*");
-		
-		//waits on user to press enter
-		scan.next();
-		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n");
-		
-		//calls method hendrickLore for Hendrick to tell the player all about the world and their first quest/task
-		hendrickLore();
 	}
 	
 	//new method for Hendrick to tell the user world lore
 	public static void hendrickLore()
 	{
-		System.out.println("As you know, you are currently in our village: Cnetha.\n"+
-	"Here, we have long had one sovereign: King Sporbald.");
-		
-		//waits on user to press enter
-		scan.next();
-		
-		System.out.println("For years, King Sporbald had little trouble maintaining the joyous nature of his people\n"+
-		"There we few issues in regard to resources, as the forest just South of here has always been plentiful with all sorts of delicious vegetation.");
-		System.out.println("The (much large) kingdom to the North, Marigald, is much farther away.");
-		System.out.println("The Souther forest is merely two day's journey from here, whereas it takes twelve to reach Marigald...\n");
-		System.out.print("And that's if you're moving quickly...");
-		
-		//waits on user to press enter
-		scan.next();
-		
-		System.out.println("There has not been communication between Cnetha and Marigald for decades, \nso the path there is incredibly dangerous as few have travelled upon it in many years.");
 		
 	}
 
