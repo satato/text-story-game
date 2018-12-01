@@ -22,6 +22,7 @@ public class Player
 	private int playerDamage;
 	private int playerDefense;
 	private double mana;
+	private double manaMAX;
 
 	//constructs player data based on their chosen class and random variables
 	public Player(int userClass)
@@ -29,6 +30,7 @@ public class Player
 		//it's a starting player, so they began with no exp and full mana:
 		this.playerXP = 0;
 		this.mana = 10.0;
+		this.manaMAX = 10.00;
 		
 		//randomly determines the player's race
 		this.playerRace = random.nextInt(3);
