@@ -23,6 +23,7 @@ Player Stat Types:
 -Damage (attackPoints)(integer)
 -Defense (defenseScore)(integer)
 -Mana (mana)(double)
+-Max mana (manaMAX)(double) -->>level 10 mage mana = 20
 -------------------------------------
 Player Stat Determination:
 -HP : base HP comes from race, as listed above
@@ -42,11 +43,11 @@ Full Spells List:
 -2: Fire Blast (-2 mana)(lvl 2 spell;; does 3-11dmg @lvl.2)
 -3: Confuse (-6 mana)(lvl 2 spell;; if succeeds, enemy loses turn)
 -4: Void Shot (-4 mana)(lvl 4 spell;; does 8-23dmg @lvl.4)
--5: Major Healing (-4 mana)(heals for 15HP;; cannot increase max HP)
--6: 
--7: 
--8: 
--9: Ultimate Healing (-7 mana)(heals for 50HP;; can temporarily increase maxHP)
+-5: Major Healing (-4 mana)(lvl 6 spell;; heals for 15HP;; cannot increase max HP)
+-6: Ice Storm (-5 mana)(lvl 7 spell;; does 14-29dmg @lvl.7)
+-7: Hurricane (-9 mana)(lvl 8 spell;; does 27-42dmg @lvl.8)
+-8: Torrential Downpour (-7 mana)(lvl 9 spell;; does 24-75dmg @lvl.9)
+-9: Ultimate Healing (-12 mana)(heals for 50HP;; can temporarily increase maxHP)
 
 -------------------------------------
 Lore:
