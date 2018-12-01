@@ -11,6 +11,8 @@ public class Player
 	public Scanner scan = new Scanner(System.in);
 	public Random random = new Random();
 	
+	public static String[] Spells = {"1.Minor Healing","2.Ice Bolt","3.Fire Blast","4.Confuse","5.Void Shot","6.Major Healing","7.Ice Storm","8.Hurricane","9.Torrential Downpour","10.Ultimate Healing"};
+	
 	//declaring private variables representative of player stats/characteristics
 	private int playerRace;
 	private int playerClass;
@@ -18,11 +20,12 @@ public class Player
 	private int MAXplayerHP;
 	private int playerXP;
 	private boolean spellCastingAbility;
-	private int[] spells;
+	private String[] spells;
 	private int playerDamage;
 	private int playerDefense;
 	private double mana;
 	private double manaMAX;
+	private String[] inventory;
 
 	//constructs player data based on their chosen class and random variables
 	public Player(int userClass)
@@ -82,7 +85,10 @@ public class Player
 			
 			//spellcaster?
 			spellCastingAbility = true;
-			spells = new int[10];
+			//creates player's spell list
+			this.spells = new String[10];
+			spells[0] = Spells[0];
+			spells[1] = Spells[1];
 		}
 		//if player is warrior
 		else if(playerClass == 1)
@@ -98,7 +104,9 @@ public class Player
 			
 			//spellcaster?
 			spellCastingAbility = false;
-			spells = new int[0];
+			//creates player's spell list (non-mage characters can only use minor healing spell)
+			this.spells = new String[1];
+			spells[0] = Spells[0];
 		}
 		//if player is archer
 		else
@@ -112,7 +120,9 @@ public class Player
 			
 			//spellcaster?
 			spellCastingAbility = false;
-			spells = new int[0];
+			//creates player's spell list (non-mage characters can only use minor healing spell)
+			this.spells = new String[1];
+			spells[0] = Spells[0];
 		}
 		
 		//sets player HP to be the max since they haven't taken any damage or anything
