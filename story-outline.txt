@@ -4,23 +4,35 @@
 Story type: Light Fantasy Adventure
 -------------------------------------
 Races:
--Human
--Gnome
--Dwarf
--Giant
+-Human ; 20HP; 5; 15; 
+-Gnome ; 15HP; 8; 12; 
+-Dwarf ; 25HP; 3; 15; 
+-Giant ; 30HP; 10; 18; 
 
 Classes:
--Mage
--Warrior
--Archer
+-Mage ; +0HP; +5; -1; 
+-Warrior ; +10HP; +10; +3; 
+-Archer; +5HP; +0; +2; 
 
 Player Stat Types:
 -Health Points (userHP)(integer)
 -Experience (userExp)(integer)
 -Spellcaster? (spellCastingAbility)(boolean)
 -Spells Available (spellsAvailable)(array/list)
--Default Damage (attackPoints)(integer)
--Default Defense (defenseScore)(integer)
+-Damage (attackPoints)(integer)
+-Defense (defenseScore)(integer)
+-------------------------------------
+Player Stat Determination:
+-HP : base HP comes from race, as listed above
+-- HP bonus comes from class, as listed above
+
+-Experience : varies from quest to quest and mob to mob;;
+
+-Damage : (this is base/melee damage) based on race, as listed above
+-- Damage bonus comes from class, as listed above
+
+-Defense: based on race, as listed above
+-- bonus based on class, as listed above
 -------------------------------------
 Lore:
 -----
