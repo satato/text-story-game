@@ -20,12 +20,14 @@ public class Player
 	private int[] spells;
 	private int playerDamage;
 	private int playerDefense;
+	private double mana;
 
 	//constructs player data based on their chosen class and random variables
 	public Player(int userClass)
 	{
-		//it's a starting player, so they began with no exp:
+		//it's a starting player, so they began with no exp and full mana:
 		this.playerXP = 0;
+		this.mana = 10.0;
 		
 		//randomly determines the player's race
 		this.playerRace = random.nextInt(3);
