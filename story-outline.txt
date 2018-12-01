@@ -16,7 +16,7 @@ Classes:
 
 Player Stat Types:
 -Health Points (userHP)(integer)
--Max Health Points (userHP)(integer)
+-Max Health Points (maxHP)(integer)
 -Experience (userExp)(integer)
 -Spellcaster? (spellCastingAbility)(boolean)
 -Spells Available (spellsAvailable)(array/list)
