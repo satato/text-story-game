@@ -53,7 +53,7 @@ public class mainAdventureRun
 		//determines appropriate response
 		if(userResponse.equals("yes"))
 			System.out.println("Perfect!");
-		else if(userResponse.equals("no"))
+		else if(userResponse.equals("no thank you"))
 			System.out.println("Well, uh, it's sort of the...erm...King's orders?\nI'm not sure you really have a choice in the matter...");
 		
 		System.out.println("Let's get you ready then, shall we?");
@@ -68,11 +68,11 @@ public class mainAdventureRun
 		}
 		
 		System.out.println("Let me tell you the story of our village...");
-		System.out.println("*press any key and then enter to continue*");
+		System.out.println("*press enter to continue*");
 		
 		//waits on user to press enter
-		scan.next();
-		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		scan.nextLine();
+		System.out.println("\n\n");
 		
 		//calls method hendrickLore for Hendrick to tell the player all about the world and their first quest/task
 		hendrickLore();
@@ -85,7 +85,7 @@ public class mainAdventureRun
 	"Here, we have long had one sovereign: King Sporbald.");
 		
 		//waits on user to press enter
-		scan.next();
+		scan.nextLine();
 		
 		System.out.println("For years, King Sporbald had little trouble maintaining the joyous nature of his people\n"+
 		"There we few issues in regard to resources, as the forest just South of here has always been plentiful with all sorts of delicious vegetation.");
@@ -94,7 +94,7 @@ public class mainAdventureRun
 		System.out.print("And that's if you're moving quickly...");
 		
 		//waits on user to press enter
-		scan.next();
+		scan.nextLine();
 		
 		System.out.println("There has not been communication between Cnetha and Marigald for decades, \nso the path there is incredibly dangerous as few have travelled upon it in many years.");
 		
