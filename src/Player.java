@@ -113,6 +113,7 @@ public class Player
 			spells = new int[0];
 		}
 		
+		//sets player HP to be the max since they haven't taken any damage or anything
 		playerHP = MAXplayerHP;
 		
 	}
