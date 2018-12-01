@@ -37,16 +37,16 @@ Player Stat Determination:
 -- bonus based on class, as listed above
 -------------------------------------
 Full Spells List:
--0: Minor Healing (-2 mana)(heals for 3 HP;; cannot increase max HP)
--1: 
--2: 
--3: 
--4: 
--5: 
+-0: Minor Healing (non-mage spell)(-2 mana)(heals for 3 HP;; cannot increase max HP)
+-1: Ice Bolt (-1 mana)(lvl 1 spell;; does 2-5dmg @lvl.1)
+-2: Fire Blast (-2 mana)(lvl 2 spell;; does 3-11dmg @lvl.2)
+-3: Confuse (-6 mana)(lvl 2 spell;; if succeeds, enemy loses turn)
+-4: Void Shot (-4 mana)(lvl 4 spell;; does 8-23dmg @lvl.4)
+-5: Major Healing (-4 mana)(heals for 15HP;; cannot increase max HP)
 -6: 
 -7: 
 -8: 
--9: 
+-9: Ultimate Healing (-7 mana)(heals for 50HP;; can temporarily increase maxHP)
 
 -------------------------------------
 Lore:
