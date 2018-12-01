@@ -21,6 +21,7 @@ Player Stat Types:
 -Spells Available (spellsAvailable)(array/list)
 -Damage (attackPoints)(integer)
 -Defense (defenseScore)(integer)
+-Mana (mana)(double)
 -------------------------------------
 Player Stat Determination:
 -HP : base HP comes from race, as listed above
@@ -33,6 +34,10 @@ Player Stat Determination:
 
 -Defense: based on race, as listed above
 -- bonus based on class, as listed above
+-------------------------------------
+Full Spells List:
+-0: Minor Healing
+
 -------------------------------------
 Lore:
 -----
