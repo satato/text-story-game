@@ -4,10 +4,10 @@
 Story type: Light Fantasy Adventure
 -------------------------------------
 Races:
--Human ; 20HP; 5; 15; 
--Gnome ; 15HP; 8; 12; 
--Dwarf ; 25HP; 3; 15; 
--Giant ; 30HP; 10; 18; 
+-Human ; 15-20HP; 5; 12-15; 
+-Gnome ; 12-15HP; 8; 10-13; 
+-Dwarf ; 18-25HP; 3; 10-15; 
+-Giant ; 15-30HP; 10; 14-18; 
 
 Classes:
 -Mage ; +0HP; +5; -1; 
