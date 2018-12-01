@@ -16,6 +16,7 @@ Classes:
 
 Player Stat Types:
 -Health Points (userHP)(integer)
+-Max Health Points (maxHP)(integer)
 -Experience (userExp)(integer)
 -Spellcaster? (spellCastingAbility)(boolean)
 -Spells Available (spellsAvailable)(array/list)
@@ -36,7 +37,16 @@ Player Stat Determination:
 -- bonus based on class, as listed above
 -------------------------------------
 Full Spells List:
--0: Minor Healing
+-0: Minor Healing (-2 mana)(heals for 3 HP;; cannot increase max HP)
+-1: 
+-2: 
+-3: 
+-4: 
+-5: 
+-6: 
+-7: 
+-8: 
+-9: 
 
 -------------------------------------
 Lore:
