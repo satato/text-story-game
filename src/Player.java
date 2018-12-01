@@ -15,6 +15,7 @@ public class Player
 	private int playerRace;
 	private int playerClass;
 	private int playerHP;
+	private int MAXplayerHP;
 	private int playerXP;
 	private boolean spellCastingAbility;
 	private int[] spells;
@@ -35,28 +36,28 @@ public class Player
 		//if player is human:
 		if(playerRace == 0)
 		{
-			playerHP = 15+random.nextInt(6);
+			MAXplayerHP = 15+random.nextInt(6);
 			playerDamage = 5;
 			playerDefense = 12+random.nextInt(4);
 		}
 		//if player is gnomish:
 		else if(playerRace == 1)
 		{
-			playerHP = 12+random.nextInt(4);
+			MAXplayerHP = 12+random.nextInt(4);
 			playerDamage = 8;
 			playerDefense = 10+random.nextInt(4);
 		}
 		//if player is dwarven:
 		else if(playerRace == 2)
 		{
-			playerHP = 18+random.nextInt(8);
+			MAXplayerHP = 18+random.nextInt(8);
 			playerDamage = 3;
 			playerDefense = 10+random.nextInt(6);
 		}
 		//if player is giant:
 		else
 		{
-			playerHP = 15+random.nextInt(16);
+			MAXplayerHP = 15+random.nextInt(16);
 			playerDamage = 10;
 			playerDefense = 14+random.nextInt(5);
 		}
@@ -85,7 +86,7 @@ public class Player
 		else if(playerClass == 1)
 		{
 			//HP mod
-			playerHP = playerHP + 10;
+			MAXplayerHP = playerHP + 10;
 			
 			//damage mod
 			playerDamage = playerDamage + 10;
@@ -101,7 +102,7 @@ public class Player
 		else
 		{
 			//hp mod
-			playerHP = playerHP + 5;
+			MAXplayerHP = playerHP + 5;
 			
 			//no damage mod
 			//defense mod
@@ -111,6 +112,8 @@ public class Player
 			spellCastingAbility = false;
 			spells = new int[0];
 		}
+		
+		playerHP = MAXplayerHP;
 		
 	}
 }
