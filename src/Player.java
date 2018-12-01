@@ -24,6 +24,9 @@ public class Player
 	//constructs player data based on their chosen class and random variables
 	public Player(int userClass)
 	{
+		//it's a starting player, so they began with no exp:
+		this.playerXP = 0;
+		
 		//randomly determines the player's race
 		this.playerRace = random.nextInt(3);
 		//based on race, semi-randomly determines base HP, Damage, and Defense according the story-outline.txt
@@ -58,9 +61,54 @@ public class Player
 		
 		//assigns the user's class to their chosen class (0-mage, 1-warrior, or 2-archer)
 		this.playerClass = userClass;
-		//gives HP, Damage, and Defense modifiers based on class;;
+		
+		//the following gives HP, Damage, and Defense modifiers based on class;;
 		//also assigns other variables such as spellCastingAbility and spells accordingly
 		
+		//if user is mage
+		if(playerClass == 0)
+		{
+			//no HP mod for mages
+			//damage mod
+			playerDamage = playerDamage + 5;
+			
+			//defense mod
+			playerDefense = playerDefense - 1;
+			
+			//spellcaster?
+			spellCastingAbility = true;
+			spells = new int[10];
+		}
+		//if player is warrior
+		else if(playerClass == 1)
+		{
+			//HP mod
+			playerHP = playerHP + 10;
+			
+			//damage mod
+			playerDamage = playerDamage + 10;
+			
+			//defense mod
+			playerDefense = playerDefense + 3;
+			
+			//spellcaster?
+			spellCastingAbility = false;
+			spells = new int[0];
+		}
+		//if player is archer
+		else
+		{
+			//hp mod
+			playerHP = playerHP + 5;
+			
+			//no damage mod
+			//defense mod
+			playerDefense = playerDefense + 2;
+			
+			//spellcaster?
+			spellCastingAbility = false;
+			spells = new int[0];
+		}
 		
 	}
 }
