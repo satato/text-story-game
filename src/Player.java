@@ -25,7 +25,7 @@ public class Player
 	private int playerDefense;
 	private double mana;
 	private double manaMAX;
-	private String[] inventory;
+	private String[][] inventory;
 
 	//constructs player data based on their chosen class and random variables
 	public Player(int userClass)
@@ -34,6 +34,8 @@ public class Player
 		this.playerXP = 0;
 		this.mana = 10.0;
 		this.manaMAX = 10.00;
+		//they also begin with an empty, 3x3 / 9-slot inventory
+		this.inventory = new String[3][3];
 		
 		//randomly determines the player's race
 		this.playerRace = random.nextInt(3);
@@ -89,6 +91,9 @@ public class Player
 			this.spells = new String[10];
 			spells[0] = Spells[0];
 			spells[1] = Spells[1];
+			
+			//gives player initial weapon in their inventory based on class
+			inventory[0][0] = "1.Quarter Staff";
 		}
 		//if player is warrior
 		else if(playerClass == 1)
@@ -107,6 +112,9 @@ public class Player
 			//creates player's spell list (non-mage characters can only use minor healing spell)
 			this.spells = new String[1];
 			spells[0] = Spells[0];
+			
+			//gives player initial weapon in their inventory based on class
+			inventory[0][0] = "1.Broadsword";
 		}
 		//if player is archer
 		else
@@ -123,10 +131,28 @@ public class Player
 			//creates player's spell list (non-mage characters can only use minor healing spell)
 			this.spells = new String[1];
 			spells[0] = Spells[0];
+			
+			//gives player initial weapon in their inventory based on class
+			inventory[0][0] = "1.Bow";
 		}
 		
 		//sets player HP to be the max since they haven't taken any damage or anything
 		playerHP = MAXplayerHP;
 		
 	}
+	
+	
+	public void viewInventory()
+	{
+		System.out.println("");
+		for(int a=0;a<3;a++)
+		{
+			for(int b=0;b<3;b++)
+			{
+				System.out.print(this.inventory[a][b]+"");
+			}
+			System.out.println("");
+		}
+	}
+	
 }
