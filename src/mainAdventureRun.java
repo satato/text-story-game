@@ -90,7 +90,7 @@ public class mainAdventureRun
 		System.out.println("For years, King Sporbald had little trouble maintaining the joyous nature of his people\n"+
 		"There we few issues in regard to resources, as the forest just South of here has always been plentiful with all sorts of delicious vegetation.");
 		System.out.println("The (much large) kingdom to the North, Marigald, is much farther away.");
-		System.out.println("The Souther forest is merely two day's journey from here, whereas it takes twelve to reach Marigald...\n");
+		System.out.println("The Souther forest is merely two day's journey from here, whereas it takes five to reach Marigald...\n");
 		System.out.print("And that's if you're moving quickly...");
 		
 		//waits on user to press enter
